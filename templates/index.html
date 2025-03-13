@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulte seu CEP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4c96af;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Consulte seu CEP</h1>
+
+        <form action="" method="post" class="form">
+            <label for="cep" class="cep-label">Digite um CEP:</label>
+            <input type="text" name="cep" id="cep" class="cep-input" placeholder="Ex: 12345-678" required>
+            <button type="submit" class="submit-btn">Pesquisar</button>
+        </form>
+
+        <!-- Exibindo o resultado da consulta -->
+        <div class="result">
+            <p><strong>Resultado:</strong></p>
+            <p>{{ res }}</p>
+        </div>
+
+        <p class="separator">-----------------------------------</p>
+
+        <div class="result">
+            <p><strong>Outro Resultado:</strong></p>
+            <p>{{ res2 }}</p>
+        
+</html>
